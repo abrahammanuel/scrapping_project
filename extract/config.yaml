@@ -1,0 +1,13 @@
+blog_site: 
+  lifestylealcuadrado: 
+    url: https://www.ciudadano2cero.com/temas-del-blog/
+    queries_home: 
+      homepage_articles: //*[@id="categories"]/div[2]/div/div/div/h3/a/@href
+      section_articles: /html/body/div[1]/div/div/div[2]/div/div/div/div/h3/a/@href 
+    queries_article: 
+      title: /html/body/div[1]/div/div/main/article/header/h1/text()
+      body: /html/body/div[1]/div/div/main/article/div[@class="entry-content"]//text() 
+      author: /html/body/div[1]/div/div/main/article/header/div/div[1]/div/p[1]/span/a/span[@class="entry-author-name"][1]//text() 
+      date: /html/body/div[1]/div/div/main/article/header/div/div[1]/div/p[1]/time//@datetime|@dateTime
+      
+# describe de page and the queries for page
